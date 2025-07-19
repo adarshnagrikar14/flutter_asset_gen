@@ -1,0 +1,14 @@
+roots:
+  - assets/images
+  - assets/icons
+  - assets/audios
+  - assets/raws
+output: lib/core/constants/assets.dart
+class_name: Assets
+exclude:
+  - "**/.*"
+  - "**/*.DS_Store"
+generate_map: true
+group_by_root: true
+case: camel
+sort: identifier

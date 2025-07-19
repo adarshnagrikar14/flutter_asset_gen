@@ -1,0 +1,4 @@
+roots:
+  - assets/images
+output: lib/assets.dart
+class_name: ExampleAssets
