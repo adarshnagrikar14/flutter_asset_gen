@@ -1,6 +1,13 @@
 # Changelog
 
-## [0.2.0] - 2024-01-XX
+## [0.3.0] - 2025-07-19
+
+### Fixed
+- Fixed Dart formatting issues in `bin/flutter_asset_gen.dart`
+- Applied `dart format .` to ensure consistent code formatting
+- Resolved linting and formatting warnings
+
+## [0.2.0] - 2025-07-19
 
 ### Added
 - **Watch Mode** - Automatically regenerate assets when files change
@@ -59,7 +66,7 @@
 - Better error handling in configuration loading
 - Fixed issues with special characters in asset paths
 
-## [0.1.0] - 2024-01-XX
+## [0.1.0] - 2025-07-19
 
 ### Added
 - Initial release with basic asset generation

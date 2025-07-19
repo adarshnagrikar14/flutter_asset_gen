@@ -1,6 +1,6 @@
 name: flutter_asset_gen
 description: Fast, configurable Dart/Flutter asset constants generator.
-version: 0.2.0
+version: 0.3.0
 homepage: https://github.com/adarshnagrikar14/flutter_asset_gen
 repository: https://github.com/adarshnagrikar14/flutter_asset_gen
 issue_tracker: https://github.com/adarshnagrikar14/flutter_asset_gen/issues
