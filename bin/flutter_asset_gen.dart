@@ -43,12 +43,12 @@ void main(List<String> args) async {
     });
 
     await watcher.start();
-    } else {
+  } else {
     var config = loadConfig(configPath);
     if (!validate) {
       config = config.copyWith(validatePubspec: false);
     }
-    
+
     await generateAssets(
       config: config,
       verbose: verbose,
