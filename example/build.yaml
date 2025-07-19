@@ -1,0 +1,10 @@
+targets:
+  $default:
+    builders:
+      flutter_asset_gen|assetGenBuilder:
+        enabled: true
+        options:
+          output: lib/generated/assets.dart
+          class_name: Assets
+          generate_enum: false
+          validate_pubspec: true 

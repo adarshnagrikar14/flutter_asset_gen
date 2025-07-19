@@ -1,4 +1,53 @@
+# Asset directories to scan
 roots:
-  - assets/images
-output: lib/assets.dart
-class_name: ExampleAssets
+  - assets
+  - images
+
+# Output file location
+output: lib/generated/assets.dart
+
+# Generated class name
+class_name: Assets
+
+# Generate enum instead of class
+generate_enum: false
+
+# Watch mode (for CLI)
+watch_mode: false
+
+# Validate against pubspec.yaml
+validate_pubspec: true
+
+# Build runner mode
+build_runner_mode: false
+
+# File extensions to include (null = all)
+include_extensions:
+  - .png
+  - .jpg
+  - .jpeg
+  - .gif
+  - .svg
+
+# Patterns to exclude
+exclude:
+  - "**/*.tmp"
+  - "**/.*"
+
+# Naming case style
+case: camel  # camel, snake, kebab
+
+# Sort order
+sort: identifier  # identifier, path
+
+# Group by root directory
+group_by_root: true
+
+# Add header comment
+add_header: true
+
+# Generate map of all assets
+generate_map: true
+
+# Prefix for identifiers
+prefix: ""
