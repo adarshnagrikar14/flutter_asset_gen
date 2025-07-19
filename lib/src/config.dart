@@ -245,15 +245,15 @@ AssetGenConfig loadConfig([String? path]) {
   final file = File(path ?? 'asset_gen.yaml');
   if (!file.existsSync()) return AssetGenConfig.defaults();
   final doc = loadYaml(file.readAsStringSync()) as YamlMap;
-  List<String>? _list(dynamic v) =>
+  List<String>? parseList(dynamic v) =>
       v == null ? null : List<String>.from(v.map((e) => e.toString()));
 
   return AssetGenConfig.defaults().copyWith(
-    roots: _list(doc['roots']) ?? AssetGenConfig.defaults().roots,
+    roots: parseList(doc['roots']) ?? AssetGenConfig.defaults().roots,
     output: doc['output']?.toString(),
     className: doc['class_name']?.toString(),
-    exclude: _list(doc['exclude']) ?? AssetGenConfig.defaults().exclude,
-    includeExtensions: _list(doc['include_extensions']),
+    exclude: parseList(doc['exclude']) ?? AssetGenConfig.defaults().exclude,
+    includeExtensions: parseList(doc['include_extensions']),
     namingCase: doc['case']?.toString(),
     sort: doc['sort']?.toString(),
     groupByRoot: doc['group_by_root'] is bool ? doc['group_by_root'] : null,
